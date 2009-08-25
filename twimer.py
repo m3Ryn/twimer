@@ -19,10 +19,10 @@ if mesg=='q':
 	print "Have a Great time!"
 	sys.exit()
 elif mesg== 't':
-	hour,minute= [int(x) for x in raw_input("enter (hh:mm): ").split(":")]     # input the time u want ur tweets to be sent
+	hour,minute= [int(x) for x in raw_input("Enter time(hh:mm): ").split(":")]     # input the time u want ur tweets to be sent
  	tweet=raw_input("Type ur Tweet: ")                                         # input your tweet
 elif mesg== 'r':
-	hour,minute= [int(x) for x in raw_input("enter (hh:mm): ").split(":")]     # input the time u want ur tweets to be sent
+	hour,minute= [int(x) for x in raw_input("Enter time(hh:mm): ").split(":")]     # input the time u want ur tweets to be sent
 	dmesg=raw_input("Type ur Reminder: ")     	                           # set your reminder
 
 x=1
