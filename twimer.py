@@ -10,7 +10,8 @@ import time,sys
 
 
 
-api=twitter.Api(username='m3Ryn',password='singjamei')    # making an instance of twitter.Api class with login credentials
+
+api=twitter.Api(username='',password='')    # making an instance of twitter.Api class with login credentials
 
 mesg=str(raw_input("Press 't' to tweet,'r' for reminder,'q' to quit: "))
 
