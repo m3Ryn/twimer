@@ -11,7 +11,8 @@ import time,sys
 
 
 
-api=twitter.Api(username='',password='')    # making an instance of twitter.Api class with login credentials
+api=twitter.Api(username='<username>',password='<password>')    # making an instance of twitter.Api class with login credentials
+	                                                        # edit the code enter your username and password
 
 mesg=str(raw_input("Press 't' to tweet,'r' for reminder,'q' to quit: "))
 
@@ -36,11 +37,11 @@ while x==1:
 	if (minute==var2) and (hour==var1):
 		if mesg=='t':
 			x=0
-			status = api.PostUpdate(tweet,'m3Ryn')     # post ur tweet
+			status = api.PostUpdate(tweet,'<username>')     # post ur tweet,enter your username
 			print status.text                         # print your tweet
 		elif mesg=='r':
 			x=0
-			directMesg= api.PostDirectMessage('m3Ryn',dmesg)
+			directMesg= api.PostDirectMessage('<username>',dmesg) #enter your username
 			print directMesg.text
 	else:
 		x=1
